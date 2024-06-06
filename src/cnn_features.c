@@ -1,4 +1,4 @@
-#include <weigths.h>
+#include <cnn_features.h>
 
 void multiply_feature(feature_t op1, feature_t op2, feature_t* result) {
     *result = op1 * op2;

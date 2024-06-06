@@ -1,8 +1,9 @@
-#ifndef __CONVOLUTION_H__
-#define __CONVOLUTION_H__
+#ifndef __LENET_5_CONVOLUTION_H__
+#define __LENET_5_CONVOLUTION_H__
 
-#include <weigths.h>
+#include <cnn_features.h>
+#include <filters.h>
 
-void convolution(feature_t* batch, feature_t* filter, int size, feature_t* result);
+void convolution(feature_t* batch, filter_t filter, feature_map_t result);
 
-#endif /* __CONVOLUTION_H__ */
+#endif /* __LENET5_CONVOLUTION_H__ */

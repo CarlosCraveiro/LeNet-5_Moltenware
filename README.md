@@ -12,5 +12,5 @@ TO-DO...
 | Student                               | USP Registration Number |
 |---------------------------------------| ----------------------- |
 | Teo Alves Sobrino                     |         NUSP            |
-| Vicenzo                               |         NUSP            |
+| Vicenzo                               |         13671790        |
 | Carlos Henrique Craveiro Aquino Veras |         12547187        |

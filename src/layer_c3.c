@@ -36,7 +36,8 @@ void layer_c3(feature_t* input, feature_t* filters, feature_t* output) {
                 convolution(batchs[k][i], filter, &buffer);
                 sum_feature(sum, buffer, &sum);
             }
-
+            
+            ReLU_feature(sum, &sum);
             feat_map.map[10*10*j + i] = sum;
             
         }

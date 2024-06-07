@@ -27,6 +27,7 @@
             
             feature_t result;
             convolution(batchs[i], filter, &result);
+            ReLU_feature(result, &result);
             feat_map.map[28*28*j + i] = result;
         }
     } 

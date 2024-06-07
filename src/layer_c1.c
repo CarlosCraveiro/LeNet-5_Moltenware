@@ -24,8 +24,10 @@
             feat_map.map = output;
             feat_map.size = 28;
             feat_map.number = i;
-
-            convolution(batchs[i], filter, feat_map);
+            
+            feature_t result;
+            convolution(batchs[i], filter, &result);
+            feat_map.map[28*28*j + i] = result;
         }
     } 
 }

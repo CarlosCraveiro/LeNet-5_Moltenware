@@ -17,5 +17,6 @@ void divide_feture(feature_t op1, feature_t op2, feature_t* result);
 void sum_feature(feature_t op1, feature_t op2, feature_t* result);
 void subtract_feature(feature_t op1, feature_t op2, feature_t* result);
 void initialize_feature(feature_t* feat);
+void ReLU_feature(feature_t input, feature_t* output);
 
 #endif /* __LENET_5_FEATURES_H__ */

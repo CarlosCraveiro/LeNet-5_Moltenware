@@ -1,30 +1,30 @@
 #include <layers.h>
 #include <convolution.h>
 void layer_c3(feature_t* input, feature_t* filters, feature_t* output) {
-    feature_t batchs[6][10*10][25];
+    feature_t batchs[C1_NUMBER_OF_FILTERS][C3_OUTPUT_SIZE*C3_OUTPUT_SIZE][CONV_FILTER_SIZE*CONV_FILTER_SIZE];
 
-    for(int i = 0; i < 10; i++) {
-        for(int j = 0; j < 10; j++) {
-            for(int k = 0; k < 5; k++) {
-                for(int l = 0; l < 5; l++) {
-                    for(int m = 0; m < 6; m++) {
-                        batchs[m][10*i + j][k*5 + l] = input[m*14*14 + (i + k)*14 + j + l];
+    for(int i = 0; i < C3_OUTPUT_SIZE; i++) {
+        for(int j = 0; j < C3_OUTPUT_SIZE; j++) {
+            for(int k = 0; k < CONV_FILTER_SIZE; k++) {
+                for(int l = 0; l < CONV_FILTER_SIZE; l++) {
+                    for(int m = 0; m < C1_NUMBER_OF_FILTERS; m++) {
+                        batchs[m][C3_OUTPUT_SIZE*i + j][k*CONV_FILTER_SIZE + l] = input[m*C3_INPUT_SIZE*C3_INPUT_SIZE + (i + k)*C3_INPUT_SIZE + j + l];
                     }
                 }
             }
         }
     }
     
-    for(int i = 0; i < 10 * 10; i++) {
-        for(int j = 0; j < 16; j++) {
+    for(int i = 0; i < C3_OUTPUT_SIZE*C3_OUTPUT_SIZE; i++) {
+        for(int j = 0; j < C3_NUMBER_OF_FILTERS; j++) {
             filter_t filter;
             filter.filters = filters;
-            filter.size = 5;
+            filter.size = CONV_FILTER_SIZE;
             filter.number = j;
 
             feature_map_t feat_map;
             feat_map.map = output;
-            feat_map.size = 10;
+            feat_map.size = C3_OUTPUT_SIZE;
             feat_map.number = i;
             
             feature_t sum;
@@ -32,13 +32,13 @@ void layer_c3(feature_t* input, feature_t* filters, feature_t* output) {
 
             initialize_feature(&sum);
 
-            for(int k = 0; k < 6; k++) {
+            for(int k = 0; k < C1_NUMBER_OF_FILTERS; k++) {
                 convolution(batchs[k][i], filter, &buffer);
                 sum_feature(sum, buffer, &sum);
             }
             
             ReLU_feature(sum, &sum);
-            feat_map.map[10*10*j + i] = sum;
+            feat_map.map[C3_OUTPUT_SIZE*C3_OUTPUT_SIZE*j + i] = sum;
             
         }
     } 

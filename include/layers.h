@@ -1,5 +1,6 @@
 #ifndef __LENET_5_LAYERS_H__
 #define __LENET_5_LAYERS_H__
+#include <general_settings.h>
 #include <cnn_features.h>
 #include <filters.h>
 

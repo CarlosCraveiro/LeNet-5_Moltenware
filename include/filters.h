@@ -9,6 +9,8 @@ struct Filter {
     feature_t* filters;
     int size;
     int number;
+    int channels;
+    int channel_number;
 };
 
 #endif /* __LENET_5_FILTERS_H__ */

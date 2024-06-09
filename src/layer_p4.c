@@ -18,7 +18,8 @@ void layer_p4(feature_t* input, feature_t* output) {
     
     for(int h = 0; h < P4_OUTPUT_CHANNELS; h++) {
         for(int i = 0; i < P4_OUTPUT_SIZE*P4_OUTPUT_SIZE; i++) {
-            int max_poll = 0; // Only positive values allowed (Re-LU)
+            feature_t max_poll;
+            initialize_feature(&max_poll); // Only positive values allowed (Re-LU) 
             for(int j = 0; j < POLL_FILTER_SIZE*POLL_FILTER_SIZE; j++) {
                 max_poll = (batch[h][i][j] > max_poll)? batch[h][i][j] : max_poll;
             }

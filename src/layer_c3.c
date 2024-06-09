@@ -1,5 +1,7 @@
 #include <layers.h>
 #include <convolution.h>
+#include <activation.h>
+
 void layer_c3(feature_t* input, feature_t* filters, feature_t* biases, feature_t* output) {
     feature_t batchs[C1_NUMBER_OF_FILTERS][C3_OUTPUT_SIZE*C3_OUTPUT_SIZE][CONV_FILTER_SIZE*CONV_FILTER_SIZE];
 

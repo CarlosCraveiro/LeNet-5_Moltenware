@@ -1,4 +1,5 @@
 #include <layers.h>
+#include <activation.h>
 
 void layer_d6(feature_t* input, feature_t* weights, feature_t* biases, feature_t* output) {
     for(int i = 0; i < D6_OUTPUT_SIZE; i++) {

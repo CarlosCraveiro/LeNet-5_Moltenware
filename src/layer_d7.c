@@ -7,7 +7,7 @@ void layer_d7(feature_t* input, feature_t* weights, feature_t* biases, feature_t
         initialize_feature(&sum);
         for(int j = 0; j < D7_INPUT_SIZE; j++) {
             feature_t buffer;
-            multiply_feature(input[j], weights[j*D7_INPUT_SIZE + i], &buffer);
+            multiply_feature(input[j], weights[i*D5_OUTPUT_SIZE + j], &buffer);
             sum_feature(sum, buffer, &sum);
         }
         sum_feature(sum, biases[i], &sum); 

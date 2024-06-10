@@ -11,6 +11,6 @@ TO-DO...
 ## Authors:
 | Student                               | USP Registration Number |
 |---------------------------------------| ----------------------- |
-| Teo Alves Sobrino                     |         NUSP            |
+| Teo Alves Sobrino                     |         12557192        |
 | Vicenzo D´Arezzo Zilio                |         13671790        |
 | Carlos Henrique Craveiro Aquino Veras |         12547187        |

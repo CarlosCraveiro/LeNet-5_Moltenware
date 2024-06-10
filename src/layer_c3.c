@@ -25,7 +25,8 @@ void layer_c3(feature_t* input, feature_t* filters, feature_t* biases, feature_t
             filter.size = CONV_FILTER_SIZE;
             filter.number = j;
             filter.channels = C3_INPUT_CHANNELS; 
-            
+            filter.numbers = C3_NUMBER_OF_FILTERS;
+
             feature_t sum;
             feature_t buffer;
 
@@ -37,7 +38,7 @@ void layer_c3(feature_t* input, feature_t* filters, feature_t* biases, feature_t
                 sum_feature(sum, buffer, &sum);
                 sum_feature(sum, biases[j], &sum);
             } 
-            
+        
             ReLU_feature(sum, &sum);
             output[C3_OUTPUT_SIZE*C3_OUTPUT_SIZE*j + i] = sum; 
         }

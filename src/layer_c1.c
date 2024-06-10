@@ -1,6 +1,7 @@
 #include <layers.h>
 #include <convolution.h>
 #include <activation.h>
+//#include <stdio.h>
 
 void layer_c1(feature_t* input, feature_t* filters, feature_t* biases, feature_t* output) {
     feature_t batchs[C1_OUTPUT_SIZE*C1_OUTPUT_SIZE][CONV_FILTER_SIZE*CONV_FILTER_SIZE];
@@ -23,8 +24,18 @@ void layer_c1(feature_t* input, feature_t* filters, feature_t* biases, feature_t
             filter.size = CONV_FILTER_SIZE;
             filter.number = j;
             filter.channels = C1_INPUT_CHANNELS;
-            filter.channel_number = 1;
- 
+            filter.channel_number = 0;
+            filter.numbers = C1_NUMBER_OF_FILTERS;
+           
+            //printf("Batch %d\n", i);
+            //for(int k = 0; k < CONV_FILTER_SIZE; k++) {
+            //    for(int l = 0; l < CONV_FILTER_SIZE; l++) {
+            //        printf("%f ", batchs[i][k*CONV_FILTER_SIZE + l]);
+            //    }
+            //    printf("\n");
+            //}
+            //printf("\n");
+
             feature_t result;
             convolution(batchs[i], filter, &result);
             

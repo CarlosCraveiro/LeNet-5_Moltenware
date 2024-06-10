@@ -46,13 +46,13 @@ void read_filters(char* filename, int num, int channels, int size, feature_t* fi
         exit(1);
     }
 
-    for(int i = 0; i < channels; i++) {
+    for(int i = 0; i < size; i++) {
         for(int j = 0; j < size; j++) {
-            for(int k = 0; k < size; k++) {
+            for(int k = 0; k < channels; k++) {
                 for(int l = 0; l < num; l++) {
                     if(
                         (fscanf(fd, "%f," 
-                            , &filters[ i*size*size*num + j*num*size + k*num + l ])) < 0
+                            , &filters[ i*size*channels*num + j*channels*num + k*num + l ])) < 0
                     ) /* exit(1) */; 
                 }
             }
@@ -100,9 +100,9 @@ void print_filters(char* logfilename, int num, int channels, int size, feature_t
         exit(1);
     }
 
-    for(int i = 0; i < channels; i++) {
+    for(int i = 0; i < size; i++) {
         for(int j = 0; j < size; j++) {
-            for(int k = 0; k < size; k++) {
+            for(int k = 0; k < channels; k++) {
                 for(int l = 0; l < num; l++) {
                     char fmt_string[10];
 
@@ -112,7 +112,7 @@ void print_filters(char* logfilename, int num, int channels, int size, feature_t
                         strcpy(fmt_string, "%.8f");
                     }
                     
-                    fprintf(fd, fmt_string, filters[ i*size*size*num + j*num*size + k*num + l ]); 
+                    fprintf(fd, fmt_string, filters[ i*size*channels*num + j*channels*num + k*num + l ]);
                 }
                 fprintf(fd, "\n");
             }
@@ -152,7 +152,7 @@ void print_biases(char* logfilename, int num, feature_t* biases) {
     }
     
     for(int i = 0; i < num; i++) {
-        fprintf(fd, "%.8f\n", biases[i]);
+        fprintf(fd, "%.10f\n", biases[i]);
     }
     
     fclose(fd);
@@ -171,9 +171,9 @@ void print_featuremaps(char* logfilename, int size_h, int size_v, int channels, 
             for(int k = 0; k < size_h; k++) {
                 char fmt_string[10];
                 if(k != (size_h - 1)) {
-                    strcpy(fmt_string, "%.8f, ");
+                    strcpy(fmt_string, "%.10f, ");
                 } else {
-                    strcpy(fmt_string, "%.8f");
+                    strcpy(fmt_string, "%.10f");
                 }
 
                 fprintf(fd, fmt_string, feat_map[i*size_v*size_h + j*size_h + k]);
@@ -300,7 +300,17 @@ int main(int argc, char* argv[]) {
     layer_p2(output_c1, output_p2);
     layer_c3(output_p2, filters_c3, biases_c3, output_c3);
     layer_p4(output_c3, output_p4);
-    layer_d5(output_p4, weights_d5, biases_d5, output_d5);
+    
+    feature_t output_flatenning[P4_OUTPUT_CHANNELS*P4_OUTPUT_SIZE*P4_OUTPUT_SIZE];
+    for(int i = 0; i < P4_OUTPUT_SIZE; i++) {
+        for(int j = 0; j < P4_OUTPUT_SIZE; j++) {
+            for(int k = 0; k < P4_OUTPUT_CHANNELS; k++) {
+                output_flatenning[ i*P4_OUTPUT_SIZE*P4_OUTPUT_CHANNELS + j*P4_OUTPUT_CHANNELS + k ] = output_p4[k*P4_OUTPUT_SIZE*P4_OUTPUT_SIZE + i*P4_OUTPUT_SIZE + j];
+            }
+        }
+    }
+    
+    layer_d5(output_flatenning, weights_d5, biases_d5, output_d5);
     layer_d6(output_d5, weights_d6, biases_d6, output_d6);
     layer_d7(output_d6, weights_d7, biases_d7, output_d7);
     

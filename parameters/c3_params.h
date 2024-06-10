@@ -2,8 +2,8 @@
 #define __LENET_5_C3_params
 
 
-#include <general_settings.h>;
-#include <cnn_features.h>;
+#include <general_settings.h>
+#include <cnn_features.h>
 
 
 feature_t biases_c3[C3_NUMBER_OF_FILTERS] = {

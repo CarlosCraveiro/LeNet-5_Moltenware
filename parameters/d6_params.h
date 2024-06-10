@@ -1,8 +1,8 @@
 #ifndef __LENET_5_d6_params
 #define __LENET_5_d6_params
 
-#include <general_settings.h>;
-#include <cnn_features.h>;
+#include <general_settings.h>
+#include <cnn_features.h>
 
 feature_t weights_d6[D6_INPUT_SIZE*D6_OUTPUT_SIZE] = {
     
@@ -215,4 +215,4 @@ feature_t biases_d6[D6_OUTPUT_SIZE] = {
 -0.0040905834
 };
 
-#endif __LENET5_d6_params
+#endif /* __LENET5_d6_params */

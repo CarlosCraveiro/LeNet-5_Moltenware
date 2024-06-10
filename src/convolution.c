@@ -1,5 +1,4 @@
 #include <convolution.h>
-#include <stdio.h>
 
 void convolution(feature_t* batch, filter_t filter, feature_t* result) {
     feature_t sum;
@@ -24,18 +23,9 @@ void convolution(feature_t* batch, filter_t filter, feature_t* result) {
                     ]
                     , &buffer
             );
-            printf("%f * %f = %f\n"
-                    , batch[i*filter_size +j]
-                    , filter.filters[  
-                        filter_channel_number * filter_size * filter_size * filter_numbers
-                        + i * filter_size * filter_numbers
-                        + j * filter_numbers
-                        + filter_number
-                    ]
-                    , buffer); 
+            
             sum_feature(sum, buffer, &sum); 
         }
     }
-    printf("Sum = %f\n", sum);
     *result = sum; 
 }

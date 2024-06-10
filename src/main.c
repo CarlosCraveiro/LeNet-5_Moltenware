@@ -6,6 +6,17 @@
 #include <stdlib.h>
 #include <string.h>
 
+// Create function to print batch
+//
+//printf("Batch %d\n", i);
+//for(int k = 0; k < CONV_FILTER_SIZE; k++) {
+//    for(int l = 0; l < CONV_FILTER_SIZE; l++) {
+//        printf("%f ", batchs[i][k*CONV_FILTER_SIZE + l]);
+//    }
+//    printf("\n");
+//}
+//printf("\n");
+
 void read_image(char* filename, int size, feature_t* image) {
     /* Open Image File */
     FILE* fd;
@@ -204,6 +215,7 @@ int main(int argc, char* argv[]) {
     feature_t output_p2[P2_OUTPUT_CHANNELS*P2_OUTPUT_SIZE*P2_OUTPUT_SIZE];
     feature_t output_c3[C3_OUTPUT_CHANNELS*C3_OUTPUT_SIZE*C3_OUTPUT_SIZE];
     feature_t output_p4[P4_OUTPUT_CHANNELS*P4_OUTPUT_SIZE*P4_OUTPUT_SIZE];
+    feature_t output_flattening[P4_OUTPUT_CHANNELS*P4_OUTPUT_SIZE*P4_OUTPUT_SIZE];
     feature_t output_d5[D5_OUTPUT_CHANNELS*D5_OUTPUT_SIZE];
     feature_t output_d6[D6_OUTPUT_CHANNELS*D6_OUTPUT_SIZE];
     feature_t output_d7[D7_OUTPUT_CHANNELS*D7_OUTPUT_SIZE];
@@ -300,17 +312,10 @@ int main(int argc, char* argv[]) {
     layer_p2(output_c1, output_p2);
     layer_c3(output_p2, filters_c3, biases_c3, output_c3);
     layer_p4(output_c3, output_p4);
-    
-    feature_t output_flatenning[P4_OUTPUT_CHANNELS*P4_OUTPUT_SIZE*P4_OUTPUT_SIZE];
-    for(int i = 0; i < P4_OUTPUT_SIZE; i++) {
-        for(int j = 0; j < P4_OUTPUT_SIZE; j++) {
-            for(int k = 0; k < P4_OUTPUT_CHANNELS; k++) {
-                output_flatenning[ i*P4_OUTPUT_SIZE*P4_OUTPUT_CHANNELS + j*P4_OUTPUT_CHANNELS + k ] = output_p4[k*P4_OUTPUT_SIZE*P4_OUTPUT_SIZE + i*P4_OUTPUT_SIZE + j];
-            }
-        }
-    }
-    
-    layer_d5(output_flatenning, weights_d5, biases_d5, output_d5);
+   
+    layer_flattening(output_p4, output_flattening);
+ 
+    layer_d5(output_flattening, weights_d5, biases_d5, output_d5);
     layer_d6(output_d5, weights_d6, biases_d6, output_d6);
     layer_d7(output_d6, weights_d7, biases_d7, output_d7);
     

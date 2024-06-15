@@ -1,0 +1,230 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-I",
+      "cpus",
+      "-I",
+      "images",
+      "-I",
+      "include",
+      "-I",
+      "memory",
+      "-I",
+      "parameters",
+      "src/activation.c"
+    ],
+    "directory": "/home/teo/Documents/5s/embarcados/par/eclipse_project",
+    "file": "/home/teo/Documents/5s/embarcados/par/eclipse_project/src/activation.c"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-I",
+      "cpus",
+      "-I",
+      "images",
+      "-I",
+      "include",
+      "-I",
+      "memory",
+      "-I",
+      "parameters",
+      "src/cnn_features.c"
+    ],
+    "directory": "/home/teo/Documents/5s/embarcados/par/eclipse_project",
+    "file": "/home/teo/Documents/5s/embarcados/par/eclipse_project/src/cnn_features.c"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-I",
+      "cpus",
+      "-I",
+      "images",
+      "-I",
+      "include",
+      "-I",
+      "memory",
+      "-I",
+      "parameters",
+      "src/convolution.c"
+    ],
+    "directory": "/home/teo/Documents/5s/embarcados/par/eclipse_project",
+    "file": "/home/teo/Documents/5s/embarcados/par/eclipse_project/src/convolution.c"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-I",
+      "cpus",
+      "-I",
+      "images",
+      "-I",
+      "include",
+      "-I",
+      "memory",
+      "-I",
+      "parameters",
+      "src/layer_c1_p.c"
+    ],
+    "directory": "/home/teo/Documents/5s/embarcados/par/eclipse_project",
+    "file": "/home/teo/Documents/5s/embarcados/par/eclipse_project/src/layer_c1_p.c"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-I",
+      "cpus",
+      "-I",
+      "images",
+      "-I",
+      "include",
+      "-I",
+      "memory",
+      "-I",
+      "parameters",
+      "src/layer_c3.c"
+    ],
+    "directory": "/home/teo/Documents/5s/embarcados/par/eclipse_project",
+    "file": "/home/teo/Documents/5s/embarcados/par/eclipse_project/src/layer_c3.c"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-I",
+      "cpus",
+      "-I",
+      "images",
+      "-I",
+      "include",
+      "-I",
+      "memory",
+      "-I",
+      "parameters",
+      "src/layer_d5.c"
+    ],
+    "directory": "/home/teo/Documents/5s/embarcados/par/eclipse_project",
+    "file": "/home/teo/Documents/5s/embarcados/par/eclipse_project/src/layer_d5.c"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-I",
+      "cpus",
+      "-I",
+      "images",
+      "-I",
+      "include",
+      "-I",
+      "memory",
+      "-I",
+      "parameters",
+      "src/layer_d6.c"
+    ],
+    "directory": "/home/teo/Documents/5s/embarcados/par/eclipse_project",
+    "file": "/home/teo/Documents/5s/embarcados/par/eclipse_project/src/layer_d6.c"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-I",
+      "cpus",
+      "-I",
+      "images",
+      "-I",
+      "include",
+      "-I",
+      "memory",
+      "-I",
+      "parameters",
+      "src/layer_d7.c"
+    ],
+    "directory": "/home/teo/Documents/5s/embarcados/par/eclipse_project",
+    "file": "/home/teo/Documents/5s/embarcados/par/eclipse_project/src/layer_d7.c"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-I",
+      "cpus",
+      "-I",
+      "images",
+      "-I",
+      "include",
+      "-I",
+      "memory",
+      "-I",
+      "parameters",
+      "src/layer_flattening.c"
+    ],
+    "directory": "/home/teo/Documents/5s/embarcados/par/eclipse_project",
+    "file": "/home/teo/Documents/5s/embarcados/par/eclipse_project/src/layer_flattening.c"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-I",
+      "cpus",
+      "-I",
+      "images",
+      "-I",
+      "include",
+      "-I",
+      "memory",
+      "-I",
+      "parameters",
+      "src/layer_p2.c"
+    ],
+    "directory": "/home/teo/Documents/5s/embarcados/par/eclipse_project",
+    "file": "/home/teo/Documents/5s/embarcados/par/eclipse_project/src/layer_p2.c"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-I",
+      "cpus",
+      "-I",
+      "images",
+      "-I",
+      "include",
+      "-I",
+      "memory",
+      "-I",
+      "parameters",
+      "src/layer_p4.c"
+    ],
+    "directory": "/home/teo/Documents/5s/embarcados/par/eclipse_project",
+    "file": "/home/teo/Documents/5s/embarcados/par/eclipse_project/src/layer_p4.c"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-I",
+      "cpus",
+      "-I",
+      "images",
+      "-I",
+      "include",
+      "-I",
+      "memory",
+      "-I",
+      "parameters",
+      "src/main.c"
+    ],
+    "directory": "/home/teo/Documents/5s/embarcados/par/eclipse_project",
+    "file": "/home/teo/Documents/5s/embarcados/par/eclipse_project/src/main.c"
+  }
+]

@@ -15,7 +15,7 @@ void get_actives_cpus(int *active_cpu_num)
 }
 
 //limpar a região de memória com as CPUS que terminaram a execução
-void clean_hypervisor_check_addr(void)
+void clean_HYPERVISOR_check_addr(void)
 {
 
     long long int *controller_addr = HYPERVISOR_CHECK_ADDR;
@@ -39,8 +39,8 @@ void write_cpu_controllers(void)
     return;
 }
 
-//hypervisor
-void hypervisor_watchdog(void)
+//HYPERVISOR
+void HYPERVISOR_watchdog(void)
 {
 
     int cpu_duty[WORKER_CPU_NUM];
@@ -61,7 +61,7 @@ void hypervisor_watchdog(void)
                 if (ready_cpus == active_cpus) {
                     CURRENT_LAYER++;
                     //nenhuma CPU terminou a próxima layer
-                    clean_hypervisor_check_addr();
+                    clean_HYPERVISOR_check_addr();
                     //escrevemos quais CPUs estão ativas na próxima layer
                     write_cpu_controllers();
                     if(CURRENT_LAYER == 8) return;
@@ -73,7 +73,7 @@ void hypervisor_watchdog(void)
 
 int main(void)
 {
-    hypervisor_watchdog();
+    HYPERVISOR_watchdog();
     
     return 0;
 }

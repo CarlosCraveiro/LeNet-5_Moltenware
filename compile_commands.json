@@ -1,0 +1,218 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-I",
+      "include",
+      "-I",
+      "images",
+      "-I",
+      "parameters",
+      "-o",
+      "a.out",
+      "src/activation.c"
+    ],
+    "directory": "/home/teo/Documents/5s/embarcados/LeNet-5_Moltenware",
+    "file": "/home/teo/Documents/5s/embarcados/LeNet-5_Moltenware/src/activation.c",
+    "output": "/home/teo/Documents/5s/embarcados/LeNet-5_Moltenware/a.out"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-I",
+      "include",
+      "-I",
+      "images",
+      "-I",
+      "parameters",
+      "-o",
+      "a.out",
+      "src/cnn_features.c"
+    ],
+    "directory": "/home/teo/Documents/5s/embarcados/LeNet-5_Moltenware",
+    "file": "/home/teo/Documents/5s/embarcados/LeNet-5_Moltenware/src/cnn_features.c",
+    "output": "/home/teo/Documents/5s/embarcados/LeNet-5_Moltenware/a.out"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-I",
+      "include",
+      "-I",
+      "images",
+      "-I",
+      "parameters",
+      "-o",
+      "a.out",
+      "src/convolution.c"
+    ],
+    "directory": "/home/teo/Documents/5s/embarcados/LeNet-5_Moltenware",
+    "file": "/home/teo/Documents/5s/embarcados/LeNet-5_Moltenware/src/convolution.c",
+    "output": "/home/teo/Documents/5s/embarcados/LeNet-5_Moltenware/a.out"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-I",
+      "include",
+      "-I",
+      "images",
+      "-I",
+      "parameters",
+      "-o",
+      "a.out",
+      "src/layer_c1.c"
+    ],
+    "directory": "/home/teo/Documents/5s/embarcados/LeNet-5_Moltenware",
+    "file": "/home/teo/Documents/5s/embarcados/LeNet-5_Moltenware/src/layer_c1.c",
+    "output": "/home/teo/Documents/5s/embarcados/LeNet-5_Moltenware/a.out"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-I",
+      "include",
+      "-I",
+      "images",
+      "-I",
+      "parameters",
+      "-o",
+      "a.out",
+      "src/layer_c3.c"
+    ],
+    "directory": "/home/teo/Documents/5s/embarcados/LeNet-5_Moltenware",
+    "file": "/home/teo/Documents/5s/embarcados/LeNet-5_Moltenware/src/layer_c3.c",
+    "output": "/home/teo/Documents/5s/embarcados/LeNet-5_Moltenware/a.out"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-I",
+      "include",
+      "-I",
+      "images",
+      "-I",
+      "parameters",
+      "-o",
+      "a.out",
+      "src/layer_d5.c"
+    ],
+    "directory": "/home/teo/Documents/5s/embarcados/LeNet-5_Moltenware",
+    "file": "/home/teo/Documents/5s/embarcados/LeNet-5_Moltenware/src/layer_d5.c",
+    "output": "/home/teo/Documents/5s/embarcados/LeNet-5_Moltenware/a.out"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-I",
+      "include",
+      "-I",
+      "images",
+      "-I",
+      "parameters",
+      "-o",
+      "a.out",
+      "src/layer_d6.c"
+    ],
+    "directory": "/home/teo/Documents/5s/embarcados/LeNet-5_Moltenware",
+    "file": "/home/teo/Documents/5s/embarcados/LeNet-5_Moltenware/src/layer_d6.c",
+    "output": "/home/teo/Documents/5s/embarcados/LeNet-5_Moltenware/a.out"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-I",
+      "include",
+      "-I",
+      "images",
+      "-I",
+      "parameters",
+      "-o",
+      "a.out",
+      "src/layer_d7.c"
+    ],
+    "directory": "/home/teo/Documents/5s/embarcados/LeNet-5_Moltenware",
+    "file": "/home/teo/Documents/5s/embarcados/LeNet-5_Moltenware/src/layer_d7.c",
+    "output": "/home/teo/Documents/5s/embarcados/LeNet-5_Moltenware/a.out"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-I",
+      "include",
+      "-I",
+      "images",
+      "-I",
+      "parameters",
+      "-o",
+      "a.out",
+      "src/layer_flattening.c"
+    ],
+    "directory": "/home/teo/Documents/5s/embarcados/LeNet-5_Moltenware",
+    "file": "/home/teo/Documents/5s/embarcados/LeNet-5_Moltenware/src/layer_flattening.c",
+    "output": "/home/teo/Documents/5s/embarcados/LeNet-5_Moltenware/a.out"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-I",
+      "include",
+      "-I",
+      "images",
+      "-I",
+      "parameters",
+      "-o",
+      "a.out",
+      "src/layer_p2.c"
+    ],
+    "directory": "/home/teo/Documents/5s/embarcados/LeNet-5_Moltenware",
+    "file": "/home/teo/Documents/5s/embarcados/LeNet-5_Moltenware/src/layer_p2.c",
+    "output": "/home/teo/Documents/5s/embarcados/LeNet-5_Moltenware/a.out"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-I",
+      "include",
+      "-I",
+      "images",
+      "-I",
+      "parameters",
+      "-o",
+      "a.out",
+      "src/layer_p4.c"
+    ],
+    "directory": "/home/teo/Documents/5s/embarcados/LeNet-5_Moltenware",
+    "file": "/home/teo/Documents/5s/embarcados/LeNet-5_Moltenware/src/layer_p4.c",
+    "output": "/home/teo/Documents/5s/embarcados/LeNet-5_Moltenware/a.out"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-I",
+      "include",
+      "-I",
+      "images",
+      "-I",
+      "parameters",
+      "-o",
+      "a.out",
+      "src/main.c"
+    ],
+    "directory": "/home/teo/Documents/5s/embarcados/LeNet-5_Moltenware",
+    "file": "/home/teo/Documents/5s/embarcados/LeNet-5_Moltenware/src/main.c",
+    "output": "/home/teo/Documents/5s/embarcados/LeNet-5_Moltenware/a.out"
+  }
+]

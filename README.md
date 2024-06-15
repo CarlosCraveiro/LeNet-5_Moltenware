@@ -8,6 +8,10 @@ TO-DO...
 ## How to run:
 TO-DO...
 
+## Arquitetura do sistema paralelo:
+![system_arch](https://github.com/CarlosCraveiro/LeNet-5_Moltenware/assets/121174887/124cd22d-8329-4304-a779-6642a05fdf5e)
+
+
 ## Authors:
 | Student                               | USP Registration Number |
 |---------------------------------------| ----------------------- |

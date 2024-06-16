@@ -34,30 +34,30 @@
 
 #define WORD 4 
 //definir ~16kb para cada (usada como memória de instrução)
-#define CPU_0_RAM_START (long long int*) 0x20000
-#define CPU_0_RAM_END (long long int*) 0x24000
-#define CPU_1_RAM_START (long long int*) 0x24000 
-#define CPU_1_RAM_END (long long int*) 0x28000
-#define CPU_2_RAM_START (long long int*) 0x2C000
-#define CPU_2_RAM_END (long long int*) 0x2C000
-#define CPU_3_RAM_START (long long int*) 0x30000
-#define CPU_3_RAM_END (long long int*) 0x34000
-#define HYPERVISOR_RAM_START (long long int*) 0x38000
-#define HYPERVISOR_RAM_END (long long int*) 0x3C000
+#define CPU_0_RAM_START (long long int*) 0x800
+#define CPU_0_RAM_END (long long int*) 0x47FF
+#define CPU_1_RAM_START (long long int*) 0x4800 
+#define CPU_1_RAM_END (long long int*) 0x87FF
+#define CPU_2_RAM_START (long long int*) 0x8800
+#define CPU_2_RAM_END (long long int*) 0xC7FF
+#define CPU_3_RAM_START (long long int*) 0xC800
+#define CPU_3_RAM_END (long long int*) 0x107FF
+#define HYPERVISOR_RAM_START (long long int*) 0x10800
+#define HYPERVISOR_RAM_END (long long int*) 0x10BFF
 
 //definido como 1600 kb 
-#define SHARED_MEM_START (long long int*) 0x3C000
-#define SHARED_MEM_END (long long int*) 0x1CC000
+#define SHARED_MEM_START (long long int*) 0x10C00
+#define SHARED_MEM_END (long long int*) 0x29BFF
 
 //memória de controle (1kb) (precisaria ser de apenas 32 bits [8 floats])
-#define CONTROL_MEM_START (long long int*) 0x1CC000
-#define CONTROL_MEM_END (long long int*) 0x1CC400
+#define CONTROL_MEM_START (long long int*) 0x29C00
+#define CONTROL_MEM_END (long long int*) 0x2A000
 
 //mem que o HYPERVISOR lê para ver se a CPU terminou a execução (cpus escrevem)
 #define HYPERVISOR_CHECK_ADDR CONTROL_MEM_START
 
 //memória que as CPU's lerão para ver se estão ativas (HYPERVISOR escreve) 
-#define CPUS_CHECK_ADDR (long long int*) 0x1CC200
+#define CPUS_CHECK_ADDR (long long int*) 0x29D00
 
 //posição na qual as flags serão armazenadas na memória RAM compartilhada
 #define CPU_0_FLAG_OFFSET CONTROL_MEM_START

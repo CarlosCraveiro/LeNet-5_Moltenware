@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+newSoftwareExampleWizardPage.defaultLocation=/home/teo/Documents/5s/embarcados/LeNet-5_Moltenware/quartus_files/software/cpu_hyper
+newSoftwareExampleWizardPage.sopcinfoFile=/home/teo/Documents/5s/embarcados/LeNet-5_Moltenware/quartus_files/nios_float.sopcinfo
+newSoftwareExampleWizardPage2.newBspLocation=/home/teo/Documents/5s/embarcados/LeNet-5_Moltenware/quartus_files/software/cpu_hyper_bsp

@@ -1,0 +1,277 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate /home/teo/Documents/5s/embarcados/tf/parallel.qsys --block-symbol-file --output-directory=/home/teo/Documents/5s/embarcados/tf/parallel --family="Cyclone IV GX" --part=EP4CGX150DF31C7
+Progress: Loading tf/parallel.qsys
+Progress: Reading input file
+Progress: Adding RAM [altera_avalon_onchip_memory2 23.1]
+Progress: Parameterizing module RAM
+Progress: Adding clk_0 [clock_source 23.1]
+Progress: Parameterizing module clk_0
+Progress: Adding cpu_0 [altera_nios2_gen2 23.1]
+Progress: Parameterizing module cpu_0
+Progress: Adding cpu_1 [altera_nios2_gen2 23.1]
+Progress: Parameterizing module cpu_1
+Progress: Adding cpu_2 [altera_nios2_gen2 23.1]
+Progress: Parameterizing module cpu_2
+Progress: Adding cpu_3 [altera_nios2_gen2 23.1]
+Progress: Parameterizing module cpu_3
+Progress: Adding fpu_0 [altera_nios_custom_instr_floating_point_2 23.1]
+Progress: Parameterizing module fpu_0
+Progress: Adding fpu_1 [altera_nios_custom_instr_floating_point_2 23.1]
+Progress: Parameterizing module fpu_1
+Progress: Adding fpu_2 [altera_nios_custom_instr_floating_point_2 23.1]
+Progress: Parameterizing module fpu_2
+Progress: Adding fpu_3 [altera_nios_custom_instr_floating_point_2 23.1]
+Progress: Parameterizing module fpu_3
+Progress: Adding hypervisor [altera_nios2_gen2 23.1]
+Progress: Parameterizing module hypervisor
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 23.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding nios2_fpu [altera_nios_custom_instr_floating_point_2 23.1]
+Progress: Parameterizing module nios2_fpu
+Progress: Adding uart_rs [altera_avalon_uart 23.1]
+Progress: Parameterizing module uart_rs
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: parallel.cpu_0: Nios II cores are not recommended for new projects and are subject to removal in a future release. Nios V cores are the recommended replacement as applicable.
+Warning: parallel.cpu_1: Nios II cores are not recommended for new projects and are subject to removal in a future release. Nios V cores are the recommended replacement as applicable.
+Warning: parallel.cpu_2: Nios II cores are not recommended for new projects and are subject to removal in a future release. Nios V cores are the recommended replacement as applicable.
+Warning: parallel.cpu_3: Nios II cores are not recommended for new projects and are subject to removal in a future release. Nios V cores are the recommended replacement as applicable.
+Warning: parallel.hypervisor: Nios II cores are not recommended for new projects and are subject to removal in a future release. Nios V cores are the recommended replacement as applicable.
+Info: parallel.jtag_uart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate /home/teo/Documents/5s/embarcados/tf/parallel.qsys --synthesis=VERILOG --output-directory=/home/teo/Documents/5s/embarcados/tf/parallel/synthesis --family="Cyclone IV GX" --part=EP4CGX150DF31C7
+Progress: Loading tf/parallel.qsys
+Progress: Reading input file
+Progress: Adding RAM [altera_avalon_onchip_memory2 23.1]
+Progress: Parameterizing module RAM
+Progress: Adding clk_0 [clock_source 23.1]
+Progress: Parameterizing module clk_0
+Progress: Adding cpu_0 [altera_nios2_gen2 23.1]
+Progress: Parameterizing module cpu_0
+Progress: Adding cpu_1 [altera_nios2_gen2 23.1]
+Progress: Parameterizing module cpu_1
+Progress: Adding cpu_2 [altera_nios2_gen2 23.1]
+Progress: Parameterizing module cpu_2
+Progress: Adding cpu_3 [altera_nios2_gen2 23.1]
+Progress: Parameterizing module cpu_3
+Progress: Adding fpu_0 [altera_nios_custom_instr_floating_point_2 23.1]
+Progress: Parameterizing module fpu_0
+Progress: Adding fpu_1 [altera_nios_custom_instr_floating_point_2 23.1]
+Progress: Parameterizing module fpu_1
+Progress: Adding fpu_2 [altera_nios_custom_instr_floating_point_2 23.1]
+Progress: Parameterizing module fpu_2
+Progress: Adding fpu_3 [altera_nios_custom_instr_floating_point_2 23.1]
+Progress: Parameterizing module fpu_3
+Progress: Adding hypervisor [altera_nios2_gen2 23.1]
+Progress: Parameterizing module hypervisor
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 23.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding nios2_fpu [altera_nios_custom_instr_floating_point_2 23.1]
+Progress: Parameterizing module nios2_fpu
+Progress: Adding uart_rs [altera_avalon_uart 23.1]
+Progress: Parameterizing module uart_rs
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: parallel.cpu_0: Nios II cores are not recommended for new projects and are subject to removal in a future release. Nios V cores are the recommended replacement as applicable.
+Warning: parallel.cpu_1: Nios II cores are not recommended for new projects and are subject to removal in a future release. Nios V cores are the recommended replacement as applicable.
+Warning: parallel.cpu_2: Nios II cores are not recommended for new projects and are subject to removal in a future release. Nios V cores are the recommended replacement as applicable.
+Warning: parallel.cpu_3: Nios II cores are not recommended for new projects and are subject to removal in a future release. Nios V cores are the recommended replacement as applicable.
+Warning: parallel.hypervisor: Nios II cores are not recommended for new projects and are subject to removal in a future release. Nios V cores are the recommended replacement as applicable.
+Info: parallel.jtag_uart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: parallel: Generating parallel "parallel" for QUARTUS_SYNTH
+Warning: parallel: "No matching role found for hypervisor_custom_instruction_master_multi_xconnect:ci_slave:ci_slave_ipending (ipending)"
+Warning: parallel: "No matching role found for hypervisor_custom_instruction_master_multi_xconnect:ci_slave:ci_slave_estatus (estatus)"
+Warning: parallel: "No matching role found for cpu_2_custom_instruction_master_multi_xconnect:ci_slave:ci_slave_ipending (ipending)"
+Warning: parallel: "No matching role found for cpu_2_custom_instruction_master_multi_xconnect:ci_slave:ci_slave_estatus (estatus)"
+Warning: parallel: "No matching role found for cpu_3_custom_instruction_master_multi_xconnect:ci_slave:ci_slave_ipending (ipending)"
+Warning: parallel: "No matching role found for cpu_3_custom_instruction_master_multi_xconnect:ci_slave:ci_slave_estatus (estatus)"
+Warning: parallel: "No matching role found for cpu_0_custom_instruction_master_multi_xconnect:ci_slave:ci_slave_ipending (ipending)"
+Warning: parallel: "No matching role found for cpu_0_custom_instruction_master_multi_xconnect:ci_slave:ci_slave_estatus (estatus)"
+Info: RAM: Starting RTL generation for module 'parallel_RAM'
+Info: RAM:   Generation command is [exec /home/teo/intelFPGA_lite/23.1std/quartus/linux64/perl/bin/perl -I /home/teo/intelFPGA_lite/23.1std/quartus/linux64/perl/lib -I /home/teo/intelFPGA_lite/23.1std/quartus/sopc_builder/bin/europa -I /home/teo/intelFPGA_lite/23.1std/quartus/sopc_builder/bin -I /home/teo/intelFPGA_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/common -I /home/teo/intelFPGA_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- /home/teo/intelFPGA_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=parallel_RAM --dir=/tmp/alt9890_6892391363716827427.dir/0003_RAM_gen/ --quartus_dir=/home/teo/intelFPGA_lite/23.1std/quartus --verilog --config=/tmp/alt9890_6892391363716827427.dir/0003_RAM_gen//parallel_RAM_component_configuration.pl  --do_build_sim=0  ]
+Info: RAM: Done RTL generation for module 'parallel_RAM'
+Info: RAM: "parallel" instantiated altera_avalon_onchip_memory2 "RAM"
+Info: cpu_0: "parallel" instantiated altera_nios2_gen2 "cpu_0"
+Info: cpu_1: "parallel" instantiated altera_nios2_gen2 "cpu_1"
+Info: cpu_2: "parallel" instantiated altera_nios2_gen2 "cpu_2"
+Info: cpu_3: "parallel" instantiated altera_nios2_gen2 "cpu_3"
+Info: fpu_0: "parallel" instantiated altera_nios_custom_instr_floating_point_2 "fpu_0"
+Info: hypervisor: "parallel" instantiated altera_nios2_gen2 "hypervisor"
+Info: jtag_uart: Starting RTL generation for module 'parallel_jtag_uart'
+Info: jtag_uart:   Generation command is [exec /home/teo/intelFPGA_lite/23.1std/quartus/linux64/perl/bin/perl -I /home/teo/intelFPGA_lite/23.1std/quartus/linux64/perl/lib -I /home/teo/intelFPGA_lite/23.1std/quartus/sopc_builder/bin/europa -I /home/teo/intelFPGA_lite/23.1std/quartus/sopc_builder/bin -I /home/teo/intelFPGA_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/common -I /home/teo/intelFPGA_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- /home/teo/intelFPGA_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=parallel_jtag_uart --dir=/tmp/alt9890_6892391363716827427.dir/0004_jtag_uart_gen/ --quartus_dir=/home/teo/intelFPGA_lite/23.1std/quartus --verilog --config=/tmp/alt9890_6892391363716827427.dir/0004_jtag_uart_gen//parallel_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart: Done RTL generation for module 'parallel_jtag_uart'
+Info: jtag_uart: "parallel" instantiated altera_avalon_jtag_uart "jtag_uart"
+Info: uart_rs: Starting RTL generation for module 'parallel_uart_rs'
+Info: uart_rs:   Generation command is [exec /home/teo/intelFPGA_lite/23.1std/quartus/linux64/perl/bin/perl -I /home/teo/intelFPGA_lite/23.1std/quartus/linux64/perl/lib -I /home/teo/intelFPGA_lite/23.1std/quartus/sopc_builder/bin/europa -I /home/teo/intelFPGA_lite/23.1std/quartus/sopc_builder/bin -I /home/teo/intelFPGA_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/common -I /home/teo/intelFPGA_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart -- /home/teo/intelFPGA_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart/generate_rtl.pl --name=parallel_uart_rs --dir=/tmp/alt9890_6892391363716827427.dir/0005_uart_rs_gen/ --quartus_dir=/home/teo/intelFPGA_lite/23.1std/quartus --verilog --config=/tmp/alt9890_6892391363716827427.dir/0005_uart_rs_gen//parallel_uart_rs_component_configuration.pl  --do_build_sim=0  ]
+Info: uart_rs: Done RTL generation for module 'parallel_uart_rs'
+Info: uart_rs: "parallel" instantiated altera_avalon_uart "uart_rs"
+Info: hypervisor_custom_instruction_master_translator: "parallel" instantiated altera_customins_master_translator "hypervisor_custom_instruction_master_translator"
+Info: hypervisor_custom_instruction_master_comb_xconnect: "parallel" instantiated altera_customins_xconnect "hypervisor_custom_instruction_master_comb_xconnect"
+Info: hypervisor_custom_instruction_master_comb_slave_translator0: "parallel" instantiated altera_customins_slave_translator "hypervisor_custom_instruction_master_comb_slave_translator0"
+Info: hypervisor_custom_instruction_master_multi_xconnect: "parallel" instantiated altera_customins_xconnect "hypervisor_custom_instruction_master_multi_xconnect"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_007: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "parallel" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "parallel" instantiated altera_irq_mapper "irq_mapper"
+Info: irq_mapper_001: "parallel" instantiated altera_irq_mapper "irq_mapper_001"
+Info: irq_mapper_004: "parallel" instantiated altera_irq_mapper "irq_mapper_004"
+Info: rst_controller: "parallel" instantiated altera_reset_controller "rst_controller"
+Info: cpu: Starting RTL generation for module 'parallel_cpu_0_cpu'
+Info: cpu:   Generation command is [exec /home/teo/intelFPGA_lite/23.1std/quartus/linux64//perl/bin/perl -I /home/teo/intelFPGA_lite/23.1std/quartus/linux64//perl/lib -I /home/teo/intelFPGA_lite/23.1std/quartus/sopc_builder/bin/europa -I /home/teo/intelFPGA_lite/23.1std/quartus/sopc_builder/bin -I /home/teo/intelFPGA_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I /home/teo/intelFPGA_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I /home/teo/intelFPGA_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I /home/teo/intelFPGA_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- /home/teo/intelFPGA_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.pl --name=parallel_cpu_0_cpu --dir=/tmp/alt9890_6892391363716827427.dir/0014_cpu_gen/ --quartus_bindir=/home/teo/intelFPGA_lite/23.1std/quartus/linux64/ --verilog --config=/tmp/alt9890_6892391363716827427.dir/0014_cpu_gen//parallel_cpu_0_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2024.06.16 15:29:58 (*) Starting Nios II generation
+Info: cpu: # 2024.06.16 15:29:58 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2024.06.16 15:29:58 (*)   Creating all objects for CPU
+Info: cpu: # 2024.06.16 15:29:58 (*)     Testbench
+Info: cpu: # 2024.06.16 15:29:59 (*)     Instruction decoding
+Info: cpu: # 2024.06.16 15:29:59 (*)       Instruction fields
+Info: cpu: # 2024.06.16 15:29:59 (*)       Instruction decodes
+Info: cpu: # 2024.06.16 15:29:59 (*)       Signals for RTL simulation waveforms
+Info: cpu: # 2024.06.16 15:29:59 (*)       Instruction controls
+Info: cpu: # 2024.06.16 15:29:59 (*)     Pipeline frontend
+Info: cpu: # 2024.06.16 15:29:59 (*)     Pipeline backend
+Info: cpu: # 2024.06.16 15:30:01 (*)   Generating RTL from CPU objects
+Info: cpu: # 2024.06.16 15:30:01 (*)   Creating plain-text RTL
+Info: cpu: # 2024.06.16 15:30:03 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'parallel_cpu_0_cpu'
+Info: cpu: "cpu_0" instantiated altera_nios2_gen2_unit "cpu"
+Info: cpu: Starting RTL generation for module 'parallel_cpu_1_cpu'
+Info: cpu:   Generation command is [exec /home/teo/intelFPGA_lite/23.1std/quartus/linux64//perl/bin/perl -I /home/teo/intelFPGA_lite/23.1std/quartus/linux64//perl/lib -I /home/teo/intelFPGA_lite/23.1std/quartus/sopc_builder/bin/europa -I /home/teo/intelFPGA_lite/23.1std/quartus/sopc_builder/bin -I /home/teo/intelFPGA_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I /home/teo/intelFPGA_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I /home/teo/intelFPGA_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I /home/teo/intelFPGA_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- /home/teo/intelFPGA_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.pl --name=parallel_cpu_1_cpu --dir=/tmp/alt9890_6892391363716827427.dir/0015_cpu_gen/ --quartus_bindir=/home/teo/intelFPGA_lite/23.1std/quartus/linux64/ --verilog --config=/tmp/alt9890_6892391363716827427.dir/0015_cpu_gen//parallel_cpu_1_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2024.06.16 15:30:03 (*) Starting Nios II generation
+Info: cpu: # 2024.06.16 15:30:03 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2024.06.16 15:30:04 (*)   Creating all objects for CPU
+Info: cpu: # 2024.06.16 15:30:04 (*)     Testbench
+Info: cpu: # 2024.06.16 15:30:04 (*)     Instruction decoding
+Info: cpu: # 2024.06.16 15:30:04 (*)       Instruction fields
+Info: cpu: # 2024.06.16 15:30:04 (*)       Instruction decodes
+Info: cpu: # 2024.06.16 15:30:04 (*)       Signals for RTL simulation waveforms
+Info: cpu: # 2024.06.16 15:30:04 (*)       Instruction controls
+Info: cpu: # 2024.06.16 15:30:04 (*)     Pipeline frontend
+Info: cpu: # 2024.06.16 15:30:04 (*)     Pipeline backend
+Info: cpu: # 2024.06.16 15:30:06 (*)   Generating RTL from CPU objects
+Info: cpu: # 2024.06.16 15:30:06 (*)   Creating plain-text RTL
+Info: cpu: # 2024.06.16 15:30:07 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'parallel_cpu_1_cpu'
+Info: cpu: "cpu_1" instantiated altera_nios2_gen2_unit "cpu"
+Info: Reusing file /home/teo/Documents/5s/embarcados/tf/parallel/synthesis/submodules/altera_nios2_gen2_rtl_module.sv
+Info: Reusing file /home/teo/Documents/5s/embarcados/tf/parallel/synthesis/submodules/altera_nios2_gen2_rtl_module.ocp
+Info: cpu: Starting RTL generation for module 'parallel_cpu_2_cpu'
+Info: cpu:   Generation command is [exec /home/teo/intelFPGA_lite/23.1std/quartus/linux64//perl/bin/perl -I /home/teo/intelFPGA_lite/23.1std/quartus/linux64//perl/lib -I /home/teo/intelFPGA_lite/23.1std/quartus/sopc_builder/bin/europa -I /home/teo/intelFPGA_lite/23.1std/quartus/sopc_builder/bin -I /home/teo/intelFPGA_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I /home/teo/intelFPGA_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I /home/teo/intelFPGA_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I /home/teo/intelFPGA_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- /home/teo/intelFPGA_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.pl --name=parallel_cpu_2_cpu --dir=/tmp/alt9890_6892391363716827427.dir/0016_cpu_gen/ --quartus_bindir=/home/teo/intelFPGA_lite/23.1std/quartus/linux64/ --verilog --config=/tmp/alt9890_6892391363716827427.dir/0016_cpu_gen//parallel_cpu_2_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2024.06.16 15:30:08 (*) Starting Nios II generation
+Info: cpu: # 2024.06.16 15:30:08 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2024.06.16 15:30:08 (*)   Creating all objects for CPU
+Info: cpu: # 2024.06.16 15:30:08 (*)     Testbench
+Info: cpu: # 2024.06.16 15:30:08 (*)     Instruction decoding
+Info: cpu: # 2024.06.16 15:30:08 (*)       Instruction fields
+Info: cpu: # 2024.06.16 15:30:08 (*)       Instruction decodes
+Info: cpu: # 2024.06.16 15:30:09 (*)       Signals for RTL simulation waveforms
+Info: cpu: # 2024.06.16 15:30:09 (*)       Instruction controls
+Info: cpu: # 2024.06.16 15:30:09 (*)     Pipeline frontend
+Info: cpu: # 2024.06.16 15:30:09 (*)     Pipeline backend
+Info: cpu: # 2024.06.16 15:30:11 (*)   Generating RTL from CPU objects
+Info: cpu: # 2024.06.16 15:30:11 (*)   Creating plain-text RTL
+Info: cpu: # 2024.06.16 15:30:13 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'parallel_cpu_2_cpu'
+Info: cpu: "cpu_2" instantiated altera_nios2_gen2_unit "cpu"
+Info: Reusing file /home/teo/Documents/5s/embarcados/tf/parallel/synthesis/submodules/altera_nios2_gen2_rtl_module.sv
+Info: Reusing file /home/teo/Documents/5s/embarcados/tf/parallel/synthesis/submodules/altera_nios2_gen2_rtl_module.ocp
+Info: cpu: Starting RTL generation for module 'parallel_cpu_3_cpu'
+Info: cpu:   Generation command is [exec /home/teo/intelFPGA_lite/23.1std/quartus/linux64//perl/bin/perl -I /home/teo/intelFPGA_lite/23.1std/quartus/linux64//perl/lib -I /home/teo/intelFPGA_lite/23.1std/quartus/sopc_builder/bin/europa -I /home/teo/intelFPGA_lite/23.1std/quartus/sopc_builder/bin -I /home/teo/intelFPGA_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I /home/teo/intelFPGA_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I /home/teo/intelFPGA_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I /home/teo/intelFPGA_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- /home/teo/intelFPGA_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.pl --name=parallel_cpu_3_cpu --dir=/tmp/alt9890_6892391363716827427.dir/0017_cpu_gen/ --quartus_bindir=/home/teo/intelFPGA_lite/23.1std/quartus/linux64/ --verilog --config=/tmp/alt9890_6892391363716827427.dir/0017_cpu_gen//parallel_cpu_3_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2024.06.16 15:30:14 (*) Starting Nios II generation
+Info: cpu: # 2024.06.16 15:30:14 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2024.06.16 15:30:14 (*)   Creating all objects for CPU
+Info: cpu: # 2024.06.16 15:30:14 (*)     Testbench
+Info: cpu: # 2024.06.16 15:30:14 (*)     Instruction decoding
+Info: cpu: # 2024.06.16 15:30:14 (*)       Instruction fields
+Info: cpu: # 2024.06.16 15:30:14 (*)       Instruction decodes
+Info: cpu: # 2024.06.16 15:30:15 (*)       Signals for RTL simulation waveforms
+Info: cpu: # 2024.06.16 15:30:15 (*)       Instruction controls
+Info: cpu: # 2024.06.16 15:30:15 (*)     Pipeline frontend
+Info: cpu: # 2024.06.16 15:30:15 (*)     Pipeline backend
+Info: cpu: # 2024.06.16 15:30:17 (*)   Generating RTL from CPU objects
+Info: cpu: # 2024.06.16 15:30:17 (*)   Creating plain-text RTL
+Info: cpu: # 2024.06.16 15:30:19 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'parallel_cpu_3_cpu'
+Info: cpu: "cpu_3" instantiated altera_nios2_gen2_unit "cpu"
+Info: Reusing file /home/teo/Documents/5s/embarcados/tf/parallel/synthesis/submodules/altera_nios2_gen2_rtl_module.sv
+Info: Reusing file /home/teo/Documents/5s/embarcados/tf/parallel/synthesis/submodules/altera_nios2_gen2_rtl_module.ocp
+Info: fpci_combi: "fpu_0" instantiated altera_nios_custom_instr_floating_point_2_combi "fpci_combi"
+Info: fpci_multi: "fpu_0" instantiated altera_nios_custom_instr_floating_point_2_multi "fpci_multi"
+Info: cpu: Starting RTL generation for module 'parallel_hypervisor_cpu'
+Info: cpu:   Generation command is [exec /home/teo/intelFPGA_lite/23.1std/quartus/linux64//perl/bin/perl -I /home/teo/intelFPGA_lite/23.1std/quartus/linux64//perl/lib -I /home/teo/intelFPGA_lite/23.1std/quartus/sopc_builder/bin/europa -I /home/teo/intelFPGA_lite/23.1std/quartus/sopc_builder/bin -I /home/teo/intelFPGA_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I /home/teo/intelFPGA_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I /home/teo/intelFPGA_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I /home/teo/intelFPGA_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- /home/teo/intelFPGA_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.pl --name=parallel_hypervisor_cpu --dir=/tmp/alt9890_6892391363716827427.dir/0020_cpu_gen/ --quartus_bindir=/home/teo/intelFPGA_lite/23.1std/quartus/linux64/ --verilog --config=/tmp/alt9890_6892391363716827427.dir/0020_cpu_gen//parallel_hypervisor_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2024.06.16 15:30:20 (*) Starting Nios II generation
+Info: cpu: # 2024.06.16 15:30:20 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2024.06.16 15:30:20 (*)   Creating all objects for CPU
+Info: cpu: # 2024.06.16 15:30:20 (*)     Testbench
+Info: cpu: # 2024.06.16 15:30:20 (*)     Instruction decoding
+Info: cpu: # 2024.06.16 15:30:20 (*)       Instruction fields
+Info: cpu: # 2024.06.16 15:30:20 (*)       Instruction decodes
+Info: cpu: # 2024.06.16 15:30:20 (*)       Signals for RTL simulation waveforms
+Info: cpu: # 2024.06.16 15:30:20 (*)       Instruction controls
+Info: cpu: # 2024.06.16 15:30:20 (*)     Pipeline frontend
+Info: cpu: # 2024.06.16 15:30:20 (*)     Pipeline backend
+Info: cpu: # 2024.06.16 15:30:23 (*)   Generating RTL from CPU objects
+Info: cpu: # 2024.06.16 15:30:23 (*)   Creating plain-text RTL
+Info: cpu: # 2024.06.16 15:30:24 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'parallel_hypervisor_cpu'
+Info: cpu: "hypervisor" instantiated altera_nios2_gen2_unit "cpu"
+Info: Reusing file /home/teo/Documents/5s/embarcados/tf/parallel/synthesis/submodules/altera_nios2_gen2_rtl_module.sv
+Info: Reusing file /home/teo/Documents/5s/embarcados/tf/parallel/synthesis/submodules/altera_nios2_gen2_rtl_module.ocp
+Info: hypervisor_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "hypervisor_data_master_translator"
+Info: jtag_uart_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "jtag_uart_avalon_jtag_slave_translator"
+Info: hypervisor_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "hypervisor_data_master_agent"
+Info: jtag_uart_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "jtag_uart_avalon_jtag_slave_agent"
+Info: jtag_uart_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "jtag_uart_avalon_jtag_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_004: "mm_interconnect_0" instantiated altera_merlin_router "router_004"
+Info: router_005: "mm_interconnect_0" instantiated altera_merlin_router "router_005"
+Info: router_006: "mm_interconnect_0" instantiated altera_merlin_router "router_006"
+Info: router_010: "mm_interconnect_0" instantiated altera_merlin_router "router_010"
+Info: router_011: "mm_interconnect_0" instantiated altera_merlin_router "router_011"
+Info: router_012: "mm_interconnect_0" instantiated altera_merlin_router "router_012"
+Info: router_013: "mm_interconnect_0" instantiated altera_merlin_router "router_013"
+Info: router_014: "mm_interconnect_0" instantiated altera_merlin_router "router_014"
+Info: router_015: "mm_interconnect_0" instantiated altera_merlin_router "router_015"
+Info: router_016: "mm_interconnect_0" instantiated altera_merlin_router "router_016"
+Info: router_017: "mm_interconnect_0" instantiated altera_merlin_router "router_017"
+Info: hypervisor_data_master_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "hypervisor_data_master_limiter"
+Info: Reusing file /home/teo/Documents/5s/embarcados/tf/parallel/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_demux_004: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_004"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_001"
+Info: Reusing file /home/teo/Documents/5s/embarcados/tf/parallel/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: cmd_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_002"
+Info: Reusing file /home/teo/Documents/5s/embarcados/tf/parallel/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: cmd_mux_003: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_003"
+Info: Reusing file /home/teo/Documents/5s/embarcados/tf/parallel/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_001"
+Info: rsp_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_002"
+Info: rsp_demux_003: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_003"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file /home/teo/Documents/5s/embarcados/tf/parallel/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file /home/teo/Documents/5s/embarcados/tf/parallel/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_004: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_004"
+Info: Reusing file /home/teo/Documents/5s/embarcados/tf/parallel/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: parallel: Done "parallel" with 62 modules, 148 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

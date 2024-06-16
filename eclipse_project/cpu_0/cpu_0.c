@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "../memory/memory_layout.h"
 #include "hyper_config.h"
 #include "layers.h"
@@ -12,6 +13,8 @@
 #include <d7_params.h>
 #include <test_image_1.h>
 #include <test_image_0.h>
+
+int LABEL = 2;
 
 void func(void)
 {   
@@ -53,6 +56,29 @@ void func(void)
     else if(CURRENT_LAYER == 7){
         layer_d7((void*)LAYER_7_START, (void*)D7_FILTER_START, 
             (void*)D7_BIASES_START, (void*)RESULT_VECTOR_START);        
+    }
+    else if(CURRENT_LAYER == 8){
+
+        void *result_vector;
+        result_vector = (void*) RESULT_VECTOR_START;
+        printf("OUTPUT D7 (Probability Vector):\n");
+        
+        float sum = 0.0f, highest = 0.0f;
+        int index = 0;
+        for(int i = 0; i < 10; i++){
+            float curr_num = ((float*)result_vector)[i];
+            printf("%f  ", curr_num);
+            
+            if(curr_num > highest){
+                highest = curr_num;
+                index = i;
+            }
+            sum += curr_num;
+        }
+        printf("Total sum of probabilities: %f\n", sum);
+        printf("Result:\n\tcorrect label:%d\n\tPredicted label:%d (%f%%)\n",
+            LABEL, index, highest*100.0f);
+
     }
     return;
 }

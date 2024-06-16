@@ -1,4 +1,6 @@
-//main CPU in design
+//hypervisor CPU 
+#include <time.h>
+#include <stdio.h>
 #include "../cpus/cpus_config.h"
 #include "../cpus/hyper_config.h"
 #include "../memory/memory_layout.h"
@@ -48,6 +50,8 @@ void HYPERVISOR_watchdog(void)
     int active_cpus = 0;
     int ready_cpus = 0;
     get_actives_cpus(&active_cpus);
+    clock_t times[10];
+    times[0] = clock();
 
     while (1) {
         for (int i = 0; i < active_cpus; i++) {
@@ -60,11 +64,21 @@ void HYPERVISOR_watchdog(void)
 
                 if (ready_cpus == active_cpus) {
                     CURRENT_LAYER++;
+                    times[i] = clock();
                     //nenhuma CPU terminou a próxima layer
                     clean_HYPERVISOR_check_addr();
                     //escrevemos quais CPUs estão ativas na próxima layer
                     write_cpu_controllers();
-                    if(CURRENT_LAYER == 8) return;
+                    if(CURRENT_LAYER == 8){
+                        printf("Time for each layer:\n");
+                        for(int i = 0; i < 10; i++){
+                            printf("Time for layer %d: %f s", i, 
+                            (float)((float)(times[i+1]-times[i])/((float)CLOCKS_PER_SEC)));
+                        }
+                        printf("Total time: %f s", 
+                            (float)((float)(times[9]-times[0])/((float)CLOCKS_PER_SEC)));
+                    }
+                    if(CURRENT_LAYER == 9) return; //fim
                 }
             }
         }
